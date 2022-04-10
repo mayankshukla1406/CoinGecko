@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.Coin.CoinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ProgressBar
+                android:id="@+id/coinProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgCoinDetail"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/txtCoinNameDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:text="Coin Name"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtCoinMarketCap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Coin Description"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtCoinPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Coin Price"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/txtCoinPriceLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Low Price"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/txtCoinPriceHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="High Price"
+            android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtCoinPricePercentChange"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Coin Price"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="api"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
